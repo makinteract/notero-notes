@@ -1,4 +1,4 @@
-# Notero
+# Notero-Notes
 
 This is a form of the popular [Notero]() plugin for Zotero. The difference is that this fork allows us to support Notes directly in the Notion database with the field `ZoteroNotes` (see picture below).
 
