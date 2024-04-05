@@ -10,8 +10,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -33,13 +31,3 @@ jobs:
         with:
           name: ${{ steps.artifact-name.outputs.result }}
           path: build/
-      - name: Comment PR build
-        if: github.event_name == 'pull_request'
-        uses: mshick/add-pr-comment@v2
-        with:
-          message: |
-            ## 🤖 Build Bot
-
-            **✅ Successful build**
-
-            ⬇️ Download: [${{ steps.artifact-name.outputs.result }}](${{ steps.upload-artifact.outputs.artifact-url }})
