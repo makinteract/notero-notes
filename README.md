@@ -189,6 +189,7 @@ see issue [#355](https://github.com/dvanoni/notero/issues/355).
 | `URL`               | URL           |                                                                                |
 | `Year`              | Number        |                                                                                |
 | `Zotero URI`        | URL           | Opens items in web library if signed in to Zotero                              |
+| `ZoteroNotes`       | Text          | The text of the notes                                                          |
 
 ### Install and Configure Notero Plugin
 

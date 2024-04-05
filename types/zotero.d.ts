@@ -150,6 +150,7 @@ declare namespace Zotero {
     parentItem: Item | undefined;
     topLevelItem: Item;
 
+    zotero_note: string; // Added by MAKinteract
     dateAdded: string;
     dateModified: string;
     version: number;

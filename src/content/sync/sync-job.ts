@@ -16,7 +16,7 @@ import {
   getNoteroPref,
   getRequiredNoteroPref,
 } from '../prefs/notero-pref';
-import { hasErrorStack, log } from '../utils';
+import { getDOMParser, hasErrorStack, log } from '../utils';
 
 import { getNotionClient } from './notion-client';
 import type { DatabaseProperties } from './notion-types';
@@ -149,6 +149,27 @@ class SyncJob {
     this.progressWindow = params.progressWindow;
   }
 
+  // Added by MAKinteract
+  private sanitize(html: string) {
+    const doc = getDOMParser().parseFromString(html, 'text/html');
+    return doc.body.textContent || '';
+  }
+
+  // Added by MAKinteract
+  private async syncItemAndNotes(item: Zotero.Item) {
+    let text = '';
+    for (const noteID of item.getNotes(false)) {
+      const noteItem = Zotero.Items.get(noteID);
+      if (noteItem) {
+        text += noteItem.getNote() || '';
+        text += '\n---\n';
+      }
+    }
+    item.zotero_note = this.sanitize(text);
+    await this.syncRegularItem(item);
+  }
+
+  // Changed by MAKinteract
   public async perform() {
     for (const [index, item] of this.items.entries()) {
       const step = index + 1;
@@ -158,9 +179,12 @@ class SyncJob {
 
       try {
         if (item.isNote()) {
-          await this.syncNoteItem(item);
+          const parent = Zotero.Items.get(item.parentID as number);
+          if (parent) {
+            await this.syncItemAndNotes(parent);
+          }
         } else {
-          await this.syncRegularItem(item);
+          await this.syncItemAndNotes(item);
         }
       } catch (error) {
         throw new ItemSyncError(error, item);

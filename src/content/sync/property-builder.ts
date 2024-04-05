@@ -188,6 +188,20 @@ class PropertyBuilder {
           preserveWhitespace: true,
         }),
     },
+    // Added by MAKinteract
+    {
+      name: 'ZoteroNotes',
+      type: 'rich_text',
+      buildRequest: () => {
+        if (this.item.zotero_note) {
+          return buildRichText(this.item.zotero_note, {
+            preserveWhitespace: true,
+          });
+        }
+        return [];
+      },
+    },
+    // End of added by MAKinteract
     {
       name: 'Authors',
       type: 'rich_text',
