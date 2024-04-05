@@ -1,7 +1,7 @@
 {
-  "name": "notero",
+  "name": "notero-notes",
   "version": "0.5.15",
-  "description": "Sync Zotero items and notes into Notion",
+  "description": "Sync Zotero items and notes into Notion + Support for Notes",
   "scripts": {
     "build": "tsx scripts/build.ts",
     "clean": "rm -r build gen xpi",

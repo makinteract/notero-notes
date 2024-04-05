@@ -1,5 +1,13 @@
 # Notero
 
+This is a form of the popular [Notero]() plugin for Zotero. The difference is that this fork allows us to support Notes directly in the Notion database with the field `ZoteroNotes` (see picture below).
+
+![](/docs/screenshot.png)
+
+You can create a database in Notion using this [template](https://shaded-spectrum-a0a.notion.site/72c82f4683084792bba759e44b7dbc61?v=17bbe3e190614edaa3d5f82fe97e91b2&pvs=4) which includes the `ZoteroNotes` field. Everything else in this plugin is the same as in the original one. Read the documentation below for help.
+
+---
+
 [![Latest release](https://img.shields.io/github/v/release/dvanoni/notero)](https://github.com/dvanoni/notero/releases/latest)
 [![Total downloads](https://img.shields.io/github/downloads/dvanoni/notero/latest/total?sort=semver)](https://github.com/dvanoni/notero/releases/latest)
 [![Works with Zotero](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fdvanoni%2Fnotero%2Fmain%2Fpackage.json&query=%24.xpi.zoteroMinVersion&prefix=v&suffix=%2B&logo=zotero&label=Works%20with%20Zotero&color=%23CC2936)](https://www.zotero.org/)
