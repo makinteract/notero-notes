@@ -6,6 +6,10 @@ This is a form of the popular [Notero]() plugin for Zotero. The difference is th
 
 You can create a database in Notion using this [template](https://shaded-spectrum-a0a.notion.site/72c82f4683084792bba759e44b7dbc61?v=17bbe3e190614edaa3d5f82fe97e91b2) which includes the `ZoteroNotes` field. Everything else in this plugin is the same as in the original one. Read the documentation below for help.
 
+For a video tutorial please refer to this [YouTube video](https://youtu.be/wIpctRizsnU):
+
+[![](./docs/notero-notes.png)](https://youtu.be/wIpctRizsnU)
+
 ---
 
 [![Latest release](https://img.shields.io/github/v/release/dvanoni/notero)](https://github.com/dvanoni/notero/releases/latest)
