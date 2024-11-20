@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/makinteract/notero-notes/compare/v0.6.0...v0.6.1) (2024-11-20)
+
+
+### Bug Fixes
+
+* **readme:** [no ci] Updated readme ([b93e030](https://github.com/makinteract/notero-notes/commit/b93e030edeb77c66dd59ec05622a7c22817dc972))
+* **readme:** [no ci] Updated readme ([44799d1](https://github.com/makinteract/notero-notes/commit/44799d1ae773e51c5fe246832786eeab651c5024))
+* **readme:** [no ci] Updated readme ([7c42cf1](https://github.com/makinteract/notero-notes/commit/7c42cf1fea82892ca4d6e8f1af7ebb00b5ba01de))
+
 ## [0.6.0](https://github.com/makinteract/notero-notes/compare/v0.5.15...v0.6.0) (2024-04-05)
 
 
