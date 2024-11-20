@@ -1,5 +1,9 @@
 # Notero-Notes
 
+> [!WARNING]
+> New versions of Zotero seem to break the Notero-Notes plugin, and many users experience difficulties in synchronizing notes. Consider using instead the original [Notero plugin](https://github.com/dvanoni/notero)
+
+
 This is a form of the popular [Notero]() plugin for Zotero. The difference is that this fork allows us to support Notes directly in the Notion database with the field `ZoteroNotes` (see picture below).
 
 ![](/docs/screenshot.png)
